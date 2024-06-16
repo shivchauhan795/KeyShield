@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* for nav items underline when hover */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: -2px;
+    background-color: rgb(255, 244, 26);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* for nav items when size(width) of device is smaller */
+@media (max-width:550px) {
+    .navlinks {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .logo {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width:550px) {
+    .navlinks {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width:1024px) {
+    .url {
+        width: 55%;
+    }
+
+    .uspass {
+        width: 55%;
+    }
+
+}
+
+@media (max-width:450px) {
+    .uspass {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .visibleIcon {
+        position: relative;
+        left: 290px;
+        top: -45px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width:410px) {
+    .visibleIcon {
+        position: relative;
+        left: 275px;
+        top: -45px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width:390px) {
+    .visibleIcon {
+        position: relative;
+        left: 255px;
+        top: -45px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width:356px) {
+    .visibleIcon {
+        position: relative;
+        left: 235px;
+        top: -45px;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width:339px) {
+    .visibleIcon {
+        position: relative;
+        left: 200px;
+        top: -45px;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+.passwords {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: left;
+    white-space: nowrap;
+    padding: 8px;
+  }
+  
+  thead th {
+    position: sticky;
+    top: 0;
+    background-color: #d1c4e9; /* Light purple */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f3e5f5; /* Light purple */
+  }
+  
