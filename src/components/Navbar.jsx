@@ -20,7 +20,7 @@ const Navbar = () => {
 
             <div className='navlinks flex gap-4'>
                 <a href="https://shiv-chauhan.netlify.app/" target='_blank' className='nav-link'>About Developer</a>
-                <a href="https://github.com/shivchauhan795/KeyShield" className='nav-link'>Contribute</a>
+                <a href="https://github.com/shivchauhan795/KeyShield" target='_blank' className='nav-link'>Contribute</a>
             </div>
         </div>
     )
