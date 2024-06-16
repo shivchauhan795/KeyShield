@@ -109,7 +109,7 @@ const Manager = () => {
         <div className='flex flex-col items-center pt-10 gap-3'>
 
           <div className="text-4xl font-bold">
-            VaultGuard
+            KeyShield
           </div>
           <p className='text-lg pb-10'>Your Trusted Password Manager</p>
 
